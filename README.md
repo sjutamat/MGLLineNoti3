@@ -1,2 +1,2 @@
-# MGLLineNoti3
-MGLLineNoti3
+# MGL Line bot
+ลุ้นหวย02
