@@ -42,16 +42,16 @@ app.get('/', function (request, response) {
 });
 
 //Line push notification module
-app.get('/vip-web', function (req, res) {
+app.get('/TestBot03', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('Cbc6226eb4738d2d488758e2a4bd522da', respText);
+    client.pushMessage('C6e33071344721179b5422eb6b2e97e80', respText);
 	return res.sendStatus(200);
 });
-app.post('/vip-web', function(req, res) {
+app.post('/TestBot03', function(req, res) {
 	//log line messages
 
     const respText = { type: 'text', text: req.body.message };
-    client.pushMessage('Cbc6226eb4738d2d488758e2a4bd522da', respText);
+    client.pushMessage('C6e33071344721179b5422eb6b2e97e80', respText);
 	return res.sendStatus(200);
 });
 //End of module
