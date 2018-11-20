@@ -42,16 +42,16 @@ app.get('/', function (request, response) {
 });
 
 //Line push notification module
-app.get('/TestBot03', function (req, res) {
+app.get('/LunHuayPingpong', function (req, res) {
     const respText = { type: 'text', text: req.query.respText };
-    client.pushMessage('C6e33071344721179b5422eb6b2e97e80', respText);
+    client.pushMessage('C52e3c35620f4e35563d988937d4c8b50', respText);
 	return res.sendStatus(200);
 });
-app.post('/TestBot03', function(req, res) {
+app.post('/LunHuayPingpong', function(req, res) {
 	//log line messages
 
     const respText = { type: 'text', text: req.body.message };
-    client.pushMessage('C6e33071344721179b5422eb6b2e97e80', respText);
+    client.pushMessage('C52e3c35620f4e35563d988937d4c8b50', respText);
 	return res.sendStatus(200);
 });
 //End of module
